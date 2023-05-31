@@ -20,20 +20,33 @@ h1,h2,h3,h4,h5,h6 {
   max-width: 30%; /* Set the logo width to fit its container */
   height: auto; /* Maintain the aspect ratio of the logo */
 }
+
+.button-container {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.button-link {
+  display: block;
+}
+
+.button-link img {
+  width: 200px;
+  height: auto;
+}
+
 </style>
 <script src=""></script>
 <body>
 
 <img class="github-logo" src="https://cdn.discordapp.com/attachments/1106143248075980843/1113414554018390057/ghostgg.png" alt="GitHub Logo">
 
-<div style="display: flex; justify-content: center;">
-  <a href="https://discord.gg/eaW5gc3e4X" target="_blank" rel="noopener noreferrer">
-    <img src="https://cdn.discordapp.com/attachments/1106143248075980843/1113233430872870942/DX.png" alt="Discord Button" style="width: 200px; height: 50px;">
+<div class="button-container">
+  <a class="button-link" href="https://discord.gg/eaW5gc3e4X" target="_blank" rel="noopener noreferrer">
+    <img src="https://cdn.discordapp.com/attachments/1106143248075980843/1113454531167125504/SERVERINFO.png" alt="Discord Button">
   </a>
-</div>
-
-<div style="position: fixed; top: 50%; left: 20px; transform: translateY(-50%);">
-  <img src="https://cdn.discordapp.com/attachments/1106143248075980843/1113441377561350235/SERVERINFO.png" alt="Server Info Logo" style="max-width: 100%; height: auto;">
 </div>
 
 </body>
