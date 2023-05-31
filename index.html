@@ -1,6 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+<head><!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>GhostDayz.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html, body {
+      font-family: "Verdana", sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://cdn.discordapp.com/attachments/1106143248075980843/1113461599152382013/background.gif');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+    }
+
+    .logo {
+      max-width: 50%;
+      height: auto;
+    }
+
+    .button-link img {
+      width: 200px;
+      height: auto;
+    }
+
+    .slideshow-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .slideshow-image {
+      display: none;
+      width: 100%;
+      height: auto;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .image-box {
+      width: calc(33.33% - 20px);
+      margin-right: 20px;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img class="logo" src="https://cdn.discordapp.com/attachments/1106143248075980843/1113414554018390057/ghostgg.png" alt="GitHub Logo">
+
+    <a class="button-link" href="https://discord.gg/eaW5gc3e4X" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.discordapp.com/attachments/1106143248075980843/1113454531167125504/SERVERINFO.png" alt="Discord Button">
+    </a>
+  </div>
+
+  <div class="slideshow-container">
+    <img class="slideshow-image" src="https://cdn.discordapp.com/attachments/1106143248075980843/1113499607058624633/imageone.png" alt="Image 1">
+    <img class="slideshow-image" src="https://cdn.discordapp.com/attachments/1106143248075980843/1113499585466339358/imagetwo.png" alt="Image 2">
+    <img class="slideshow-image" src="https://cdn.discordapp.com/attachments/1106143248075980843/1113499514519687228/imagethree.png" alt="Image 3">
+  </div>
+
+  <div class="image-container">
+    <div class="image-box">
+      <img src="https://cdn.discordapp.com/attachments/1106143248075980843/1113531994538786866/1as.png" alt="Image 1">
+    </div>
+    <div class="image-box">
+      <img src="https://cdn.discordapp.com/attachments/1106143248075980843/1113533108915028018/2as.png" alt="Image 2">
+    </div>
+    <div class="image-box">
+      <img src="https://cdn.discordapp.com/attachments/1106143248075980843/1113534031682871326/3as.png" alt="Image 3">
+    </div>
+  </div>
+
+  <script>
+    // JavaScript to handle the slideshow
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var slides = document.getElementsByClassName("slideshow-image");
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change slide every 2 seconds
+    }
+  </script>
+</body>
+</html>
+
   <meta charset="UTF-8">
   <title>GhostDayz.com</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
