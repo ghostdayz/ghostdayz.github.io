@@ -15,16 +15,15 @@
       background-size: cover;
     }
 
-    .container {
+    .header {
       display: flex;
-      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
+      justify-content: space-between;
+      padding: 10px;
     }
 
     .logo {
-      max-width: 30%;
+      max-width: 50%;
       height: auto;
     }
 
@@ -34,10 +33,7 @@
     }
 
     .slideshow-container {
-      margin-top: 20px;
-      width: 50%;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       padding: 20px;
@@ -51,18 +47,18 @@
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="header">
     <img class="logo" src="https://cdn.discordapp.com/attachments/1106143248075980843/1113414554018390057/ghostgg.png" alt="GitHub Logo">
 
     <a class="button-link" href="https://discord.gg/eaW5gc3e4X" target="_blank" rel="noopener noreferrer">
       <img src="https://cdn.discordapp.com/attachments/1106143248075980843/1113454531167125504/SERVERINFO.png" alt="Discord Button">
     </a>
+  </div>
 
-    <div class="slideshow-container">
-      <img class="slideshow-image" src="https://cdn.discordapp.com/attachments/1106143248075980843/1113468835983540367/weapon-trees-soldier-apocalyptic-wallpaper-thumb.jpg" alt="Image 1">
-      <img class="slideshow-image" src="https://cdn.discordapp.com/attachments/1106143248075980843/1113468836256153600/dayz-war-wallpaper-thumb.jpg" alt="Image 2">
-      <img class="slideshow-image" src="https://cdn.discordapp.com/attachments/1106143248075980843/1113468836553961472/desktop-wallpaper-royal-marines.jpg" alt="Image 3">
-    </div>
+  <div class="slideshow-container">
+    <img class="slideshow-image" src="https://cdn.discordapp.com/attachments/1106143248075980843/1113468835983540367/weapon-trees-soldier-apocalyptic-wallpaper-thumb.jpg" alt="Image 1">
+    <img class="slideshow-image" src="https://cdn.discordapp.com/attachments/1106143248075980843/1113468836256153600/dayz-war-wallpaper-thumb.jpg" alt="Image 2">
+    <img class="slideshow-image" src="https://cdn.discordapp.com/attachments/1106143248075980843/1113468836553961472/desktop-wallpaper-royal-marines.jpg" alt="Image 3">
   </div>
 
   <script>
