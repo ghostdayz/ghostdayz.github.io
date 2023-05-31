@@ -2,3 +2,4 @@
   
   
   here is the link to the discord --
+[Back to the home page](index.md)
