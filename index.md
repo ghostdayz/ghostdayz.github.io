@@ -1,1 +1,2 @@
 
+[Join Discord](discord.md)
