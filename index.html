@@ -1,1 +1,141 @@
-<h1>GhostDayz.com</h>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url('https://cdn.discordapp.com/attachments/1106143248075980843/1113385734829780993/zombie-attack.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .header {
+      background-image: url('https://cdn.discordapp.com/attachments/1106143248075980843/1113230310377803776/gbanner.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 450px; /* Adjust the height as needed */
+    }
+
+    .discord-button {
+      background-image: url('https://cdn.discordapp.com/attachments/1106143248075980843/1113233430872870942/DX.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 200px; /* Adjust the width as needed */
+      height: 50px; /* Adjust the height as needed */
+      cursor: pointer;
+      position: fixed;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+    
+    .counter {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      color: white;
+      font-size: 18px;
+    }
+    
+    .info-section {
+      padding: 20px;
+      margin: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #333;
+      font-size: 18px;
+      border-radius: 5px;
+      position: relative;
+    }
+    
+    .info-section textarea {
+      width: 100%;
+      height: 200px;
+      border: none;
+      resize: vertical;
+    }
+    
+    .attribution {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 14px;
+      color: #999;
+    }
+    
+    .search-bar {
+      margin-top: 20px;
+      text-align: center;
+    }
+    
+    .search-input {
+      width: 300px;
+      height: 30px;
+      padding: 5px;
+      font-size: 16px;
+    }
+    
+    .search-button {
+      margin-left: 10px;
+      padding: 6px 12px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+  <script>
+    // Initialize the visitor counter
+    let visitorCount = 0;
+
+    // Function to update the visitor count
+    function updateVisitorCount() {
+      // Increment the counter
+      visitorCount++;
+
+      // Display the count on the page
+      document.getElementById("visitor-count").innerText = "Visitors: " + visitorCount;
+    }
+
+    // Call the function when the page loads
+    window.onload = updateVisitorCount;
+    
+    // Function to save the edited information
+    function saveInformation() {
+      var infoContent = document.getElementById("info-textarea").value;
+      document.getElementById("info-content").innerHTML = infoContent;
+    }
+  </script>
+</head>
+<body>
+  <div class="header"></div>
+  
+  <div class="info-section">
+    <h2>Welcome to our DAYZ Server</h2>
+    <p>Discover the ultimate survival experience.</p>
+    <ul>
+      <li>Immerse yourself with custom spawn points and carefully curated loot to kickstart your journey.</li>
+      <li>Stay tuned for the upcoming trader feature that will enhance your gameplay.</li>
+      <li>Experience the thrill of our survival-based server, where every decision counts.</li>
+      <li>Join factions and forge alliances to dominate the post-apocalyptic world.</li>
+      <li>Unlock the power of custom paid bases, providing you with a stronghold to withstand the harshest challenges.</li>
+      <li>Explore the wasteland with fully functional trucks and cars, along with abundant building supplies.</li>
+      <li>Engage in epic custom events that will test your skills and reward your bravery.</li>
+      <li>Join our Xbox-based server community, where like-minded survivors band together.</li>
+      <li>Experience a no-name first page without the limitations of a keyboard and mouse.</li>
+    </ul>
+    
+    <div class="discord-button"></div>
+    
+    <div class="search-bar">
+      <input type="text" class="search-input" placeholder="Search Ghostdayz.com">
+      <button class="search-button">Search</button>
+    </div>
+  </div>
+  
+  <!-- Rest of your content goes here -->
+  
+  <div class="attribution">
+    Made by Anonymous Oo | Hosted By Ghostdayz.com
+  </div>
+</body>
+</html>
