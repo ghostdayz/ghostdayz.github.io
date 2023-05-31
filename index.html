@@ -1,56 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<title>GhostDayz.com</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
-<style>
-html,body {
-  font-family:"Verdana",sans-serif;
-  background-image: url('https://cdn.discordapp.com/attachments/1106143248075980843/1113461599152382013/background.gif');
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white; /* Set the text color to white */
-}
-h1,h2,h3,h4,h5,h6 {
-  font-family:"Segoe UI",sans-serif;
-  color: white; /* Set the text color to white */
-}
-.github-logo {
-  max-width: 30%; /* Set the logo width to fit its container */
-  height: auto; /* Maintain the aspect ratio of the logo */
-}
+<head>
+  <meta charset="UTF-8">
+  <title>GhostDayz.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html, body {
+      font-family: "Verdana", sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://cdn.discordapp.com/attachments/1106143248075980843/1113461599152382013/background.gif');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
-.button-container {
-  position: fixed;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
-}
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
 
-.button-link {
-  display: block;
-}
+    .logo {
+      max-width: 30%;
+      height: auto;
+    }
 
-.button-link img {
-  width: 200px;
-  height: auto;
-}
+    .button-link img {
+      width: 200px;
+      height: auto;
+    }
 
-</style>
-<script src=""></script>
+    .slideshow-container {
+      margin-top: 20px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .slideshow-image {
+      display: none;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
 <body>
+  <div class="container">
+    <img class="logo" src="https://cdn.discordapp.com/attachments/1106143248075980843/1113414554018390057/ghostgg.png" alt="GitHub Logo">
 
-<img class="github-logo" src="https://cdn.discordapp.com/attachments/1106143248075980843/1113414554018390057/ghostgg.png" alt="GitHub Logo">
+    <a class="button-link" href="https://discord.gg/eaW5gc3e4X" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.discordapp.com/attachments/1106143248075980843/1113454531167125504/SERVERINFO.png" alt="Discord Button">
+    </a>
 
-<div class="button-container">
-  <a class="button-link" href="https://discord.gg/eaW5gc3e4X" target="_blank" rel="noopener noreferrer">
-    <img src="https://cdn.discordapp.com/attachments/1106143248075980843/1113454531167125504/SERVERINFO.png" alt="Discord Button">
-  </a>
-</div>
+    <div class="slideshow-container">
+      <img class="slideshow-image" src="https://cdn.discordapp.com/attachments/1106143248075980843/1113468835983540367/weapon-trees-soldier-apocalyptic-wallpaper-thumb.jpg" alt="Image 1">
+      <img class="slideshow-image" src="https://cdn.discordapp.com/attachments/1106143248075980843/1113468836256153600/dayz-war-wallpaper-thumb.jpg" alt="Image 2">
+      <img class="slideshow-image" src="https://cdn.discordapp.com/attachments/1106143248075980843/1113468836553961472/desktop-wallpaper-royal-marines.jpg" alt="Image 3">
+    </div>
+  </div>
 
+  <script>
+    // JavaScript to handle the slideshow
+    var slideIndex = 0;
+    showSlides();
 
+    function showSlides() {
+      var slides = document.getElementsByClassName("slideshow-image");
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change slide every 2 seconds
+    }
+  </script>
 </body>
 </html>
-
-
