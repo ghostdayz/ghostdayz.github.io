@@ -75,11 +75,29 @@
       width: 32px;
       height: 32px;
     }
+
+    .discord-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .discord-button a {
+      display: inline-block;
+      background-image: url('https://cdn.discordapp.com/attachments/1106143248075980843/1115232307670941806/Untitled-2.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 100%;
+      height: 250px;
+      text-indent: -9999px;
+      margin: 0 auto;
+    }
   </style>
 </head>
 <body>
   <img class="big-image" src="https://myfiles.space/user_files/162473_5d6f044d548573aa/162473_custom_files/img1685664320.gif" alt="Big Image">
-  <img class="big-image" src="https://cdn.discordapp.com/attachments/1106143248075980843/1113591429223170079/6691262.png" alt="Big Image">
+ 
   <div class="slideshow-container">
     <img class="slideshow-image" src="https://cdn.discordapp.com/attachments/1106143248075980843/1113499607058624633/imageone.png" alt="Image 1">
     <img class="slideshow-image" src="https://cdn.discordapp.com/attachments/1106143248075980843/1113499585466339358/imagetwo.png" alt="Image 2">
@@ -90,11 +108,19 @@
     // Check if the current connection is secure
     if (window.location.protocol === "https:") {
       // Display a lock icon or any other indicator of a secure connection
-      $('body').prepend('<img class="lock-icon" src="lock-icon.png" alt="Secure Connection">');
+      $('body').prepend('<img class="lock-icon" src="https://cdn.discordapp.com/attachments/1106143248075980843/1115612965002018866/lock-icon-11_1.png" alt="vpn Connection">');
     }
   </script>
+  <div class="discord-button">
+    <a href="https://discord.gg/6xDgquEaVm">Join our Discord</a>
+  </div>
 </body>
 </html>
+
+
+
+
+
 
 
 
