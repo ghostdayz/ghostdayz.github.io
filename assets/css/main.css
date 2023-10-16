@@ -226,14 +226,13 @@ input, select, textarea {
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #348cb2 url("images/bg.jpg") bottom left;
+		background: #348cb2 url("images/bg.png") bottom left;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
 		opacity: 1;
 		position: fixed;
-		top: 0;
-	}
+		top: 0;}
 
 	@-moz-keyframes bg {
 		0% {
@@ -322,7 +321,7 @@ input, select, textarea {
 		}
 
 		100% {
-			opacity: 1;
+			opacity: 0;
 		}
 	}
 
@@ -332,7 +331,7 @@ input, select, textarea {
 		}
 
 		100% {
-			opacity: 1;
+			opacity: 0;
 		}
 	}
 
@@ -342,7 +341,7 @@ input, select, textarea {
 		}
 
 		100% {
-			opacity: 1;
+			opacity: 0;
 		}
 	}
 
